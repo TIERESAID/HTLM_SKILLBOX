@@ -1,0 +1,686 @@
+/* font */
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Regular'), local('MullerRegular'),
+        url('/fonts/MullerRegular.woff') format('woff2'),
+        url('/fonts/MullerRegular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('MullerMedium'),
+        url('/fonts/MullerMedium.woff') format('woff2'),
+        url('/fonts/MullerMedium.woff2') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold Italic'), local('MullerBoldItalic'),
+        url('MullerBoldItalic.woff2') format('woff2'),
+        url('MullerBoldItalic.woff') format('woff');
+    font-weight: bold;
+}
+
+/* font */
+
+/* color */
+:root{
+    --gray-color: #E5E5E5;
+    --dark-color : #666666;
+    --black-color : #333333;
+    --gold-color : #CC9933;
+    --white-color: #FFFFFF;
+    --dark-gold-color:#A47312;
+    --original-gray-color: #999999;
+    --real-black-color :#000000;
+
+}
+/* color */
+
+/* commom specification */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Muller", sans-serif;
+    background-color: var(--gray-color);
+    max-width: 1200px;
+    margin:30px auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+ul {
+    list-style-type: none;
+    font-family: Muller;
+    font-size: 16px;
+    Font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+.site_button{
+    padding:  13px 15px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    border: 1px solid var(--gold-color);
+    color: var(--gold-color);
+    border-radius: 10px;
+}
+.site_button:hover{
+    transition: background-color .3s ease-in-out , color .3 ease-in-out;
+    background-color: var(--gold-color);
+    color: var(--white-color);
+}
+
+.site_button:focus{
+    transition: background-color .3s ease-in-out , color .3 ease-in-out;
+    background-color: var(--gold-color);
+    color: var(--white-color);
+}
+.site_button:active{
+    transition: background-color .3s ease-in-out , color .3 ease-in-out;
+    background-color: var(--dark-gold-color);
+    color: var(--white-color);
+}
+.special > div > h1{
+    position: static;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 40px;
+    color :var(--black-color)
+}
+
+h2{
+    margin-left: 30px;
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 40px;
+    color :var(--black-color)
+}
+
+.container_from_top{
+    margin-top: 70px;
+}
+/* commom specification */
+
+/* header */
+
+.container {
+    padding: 0 30px;
+    height: 154px;
+}
+
+.top_part_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+}
+
+.top_part_header_logo{
+    display: flex;
+    align-items: center;
+}
+
+.top_part_header_logo_number{
+    margin-left:30px ;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: var(--dark-color);
+}
+
+.top_part_header_cabinet{
+    background-image: url(/images/keyboard_tab.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 100%;
+    Vertical-align: Top;
+    color: var(--gold-color);
+}
+.site_link_arrow{
+    font-size: 16px;
+    line-height: 100%;
+    Vertical-align: Top;
+    color: var(--gold-color);
+}
+
+.bottom_part_container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.nav_list{
+    display: flex;
+}
+
+.nav_link{
+    margin-right: 25px;
+    font-family: Muller;
+    font-size: 16px;
+    Font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+.bottom_part_container_right{
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid var(--gold-color)
+}
+.header_button{
+    margin-left: 50px ;
+}
+
+/* header */
+
+/* special_offer */
+.special{
+    max-width: 1200px;
+    margin:30px auto;
+    margin-top: 70px;
+}
+.color_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 600px  ;
+}
+
+.container_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 24px;
+    height: 100%;
+    width: 49%;
+}
+.container_left_inside{
+    height: 258px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.container_left_inside_background_1{
+    background-image: url(/images/special_offer_left_1.jpg);
+}
+.container_left_inside_background_2{
+    background-image: url(/images/special_offer_left_2.jpg);
+}
+.container_right{
+    height: 573px;
+    width: 48%;
+    background-image: url(/images/special_offer_right.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.container_left_inside_title{
+    font-family: Muller;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--white-color);
+    margin-top: 40px;
+    margin-left:45px;
+}
+
+.container_left_inside_price{
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    Opacity: 80%;
+    margin-left:45px;
+    color: var(--white-color);
+}
+
+.container_left_inside_link{
+    margin-top: 47px;
+    margin-left:45px;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+.container_right_inside_title{
+    font-family: Muller;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 100%;
+    Opacity: 80%;
+    margin-top: 212px;
+    margin-left:45px;
+    color: var(--white-color);
+}
+.container_right_inside_price{
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 30px;
+    line-height: 100%;
+    Opacity: 80%;
+    margin-left:45px;
+    color: var(--white-color);
+}
+/* special_offer */
+
+/* About */
+
+.content{
+    width: 75%;
+    height: 192px;
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 32px;
+    line-height: 200%;
+    color :var(--black-color);
+}
+/* About */
+
+
+/* service */
+
+.service_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 744px;
+}
+.service_container_inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.service_container_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 49%;
+}
+.service_container_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 49%;
+}
+.service_container_top_inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 49%;
+    height: 100%;
+    background-color: var(--white-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.service_container_top_inside_image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+}
+
+/* service */
+
+/* avantage */
+
+.avantage_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 634px;
+}
+.avantage_container_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45%;
+    width: 100%;
+}
+
+.avantage_container_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
+}
+
+.avantage_container_inside{
+    background-color: var(--white-color);
+    height: 96%;
+    width: 24%;
+}
+.avantage_container_inside_content{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/* avantage */
+
+/* logement */ 
+.logement_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1428px;
+}
+.logement_container_inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+}
+
+.logement_container_inside_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+.logement_container_inside_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 49.8%;
+    background-color: var(--white-color);
+}
+.logement_container_inside_item_quality{
+    display: flex;
+    justify-content: space-around;
+}
+.logement_container_inside_item_location{
+    margin-left: 45px;
+}
+.logement_container_inside_item_number{
+    margin-left: 45px;
+    width: 25%;
+}
+/* logement specification */
+.ot{
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 100%;
+    color: var(--original-gray-color);
+}
+
+.price{
+    font-family: Muller;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--real-black-color);
+}
+.night{
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 100%;
+    color: var(--real-black-color);
+}
+.address{
+    font-family: Muller;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400px ;
+    color: var(--real-black-color);
+    line-height: 30px;
+}
+.region{
+    font-family: Muller;
+    font-style: Regular;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--original-gray-color);
+    line-height: 30px;
+}
+.last_image{
+    background-image: url(/images/logement_9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_left_inside_link{
+    margin-top: 47px;
+    margin-left:45px;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+
+.all_variant{
+    font-style: Medium;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 40px;
+    line-height: 200%;
+    color: var(--white-color);
+    margin-left: 30px;
+    margin-top: 93%;
+}
+.site_link_arrow_white{
+    margin-top: 47px;
+    margin-left:45px;
+    background-image: url(/images/white_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+/* logement */
+
+/*  tour */
+.container_from_top_tour{
+    height: 256px;
+    background-color:  #E9E9E9 !important;
+    border-radius: 5px;
+}
+.form_tour_container{
+    margin-top: 20px;
+}
+.tour_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white-color);
+    height: 106px;
+    border-radius: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.tour_label{
+    margin-top: 15px;
+}
+
+.tour_item{
+    margin-top: 15px;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 162px;
+
+}
+.tour_label_title{
+
+    font-family: Muller;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+
+/*  tour */
+
+/* contact */
+.contact_container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 618px;
+    background-color: var(--white-color);
+}
+.contact_container_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 40%;
+    height: 87%;
+}
+
+.contact_container_right{  
+    width: 50%;
+    height: 95%;
+}  
+.contact_container_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--gray-color);
+    width: 100%;
+}
+.contact_container_inside_left{
+    font-family: Muller;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 45px;
+    width: 30%;
+}
+.contact_container_inside_right{
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70%;
+    margin-left: 45px;
+}
+.contact_container_right{
+    background-image: url(/images/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-radius: 15px;
+    margin-top: 10px;
+    
+}
+
+.contact_container_inside_right > a {
+font-family: Muller;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: var(--gold-color);
+}
+/* contact */
+
+
+/* footer */
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 341px;
+    background-color: var(--black-color);
+    position: relative;
+}
+
+.footer_container_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin-right: 40px;
+}
+
+.footer_container_white{
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white-color);
+}
+.footer_container_gold{
+    color: #CC9933;
+}
+.footer_container_gold > a {
+    color: #CC9933;
+}
+.footer_container_right{
+    position: absolute;
+    margin-top: 112px;
+    margin-left:9px;
+}
+
+.footer_container_item_middle{
+    margin-right: 220px;
+}
+.footer_container_logo{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 209px;
+
+}
+
+.footer_container_right{
+    position: relative;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.footer_container_right > ul >li {
+    margin-top: 10px;
+
+}
+
+.footer_container_item_middle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+/* footer */
